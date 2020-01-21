@@ -26,6 +26,39 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginTop="50dp"/>
-    >
 
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="175dp"
+        android:text="Give feedback here!"
+        android:textAlignment="center"
+        android:id="@+id/feedback"
+        android:background="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:hint="Your Username Here"
+        android:textAlignment="center"
+        android:id="@+id/username"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="25dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/add"
+        android:text="ADD FEEDBACK"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center"/>
 </LinearLayout>
