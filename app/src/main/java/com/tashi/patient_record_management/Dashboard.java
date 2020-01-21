@@ -62,15 +62,6 @@ public class Dashboard extends AppCompatActivity {
         });
 
 
-        emg = findViewById(R.id.emg);
-        emg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                Intent I = new Intent(Dashboard.this, Activity_appointment.class);
-                startActivity(I);
-            }
-        });
 
 
         pro = findViewById(R.id.pro);

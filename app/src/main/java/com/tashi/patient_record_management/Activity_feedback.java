@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -18,7 +19,7 @@ import java.util.HashMap;
 
 public class Activity_feedback extends AppCompatActivity {
 
-    private EditText feedback;
+    private EditText feedback,username;
     private Button add;
 
     @Override
@@ -27,6 +28,7 @@ public class Activity_feedback extends AppCompatActivity {
         setContentView(R.layout.activity_feedback);
 
         feedback = findViewById(R.id.feedback);
+        username = findViewById(R.id.username);
         add = findViewById(R.id.add);
 
         add.setOnClickListener(new View.OnClickListener() {
@@ -34,8 +36,8 @@ public class Activity_feedback extends AppCompatActivity {
             public void onClick(View v) {
                 HashMap<String, Object> map = new HashMap<>();
                 map.put("feedback",feedback.getText().toString());
-
-                FirebaseDatabase.getInstance().getReference().child("Feedback")
+                map.put("username",username.getText().toString());
+                FirebaseDatabase.getInstance().getReference().child("Feedback").push()
                         .setValue(map)
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
@@ -46,6 +48,11 @@ public class Activity_feedback extends AppCompatActivity {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Log.i("fail!","onFailure: "+e.toString());
+                    }
+                }).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Log.i("Posted!","onSuccess: ");
                     }
                 });
 
