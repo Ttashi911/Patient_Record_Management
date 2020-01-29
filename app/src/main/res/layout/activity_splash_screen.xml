@@ -5,22 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
+
     <ImageView
         android:id="@+id/SplashX"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/liked"
-        android:maxWidth="50dp"
-        android:maxHeight="50dp"
-        android:layout_centerVertical="true"
+        android:layout_width="215dp"
+        android:layout_height="215dp"
+        android:layout_marginLeft="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="170dp"
+
         />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="700dp"
-
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="35dp"
         android:text="Patient Record Management"
+        android:textSize="20dp"
         android:textAlignment="center" />
 
 </RelativeLayout>

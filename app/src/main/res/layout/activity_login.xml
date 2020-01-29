@@ -1,6 +1,4 @@
-
-
-    <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -84,8 +82,8 @@
                 android:id="@+id/lin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#377FB6"
-                android:text="Login"
+                android:background="#EC184A"
+                android:text="LOG IN"
                 android:textColor="#d9e5f3"
                 android:textStyle="bold"
                 android:gravity="center"
@@ -94,7 +92,7 @@
                 android:layout_marginBottom="100dp"
                 android:letterSpacing="0.2"/>
             <TextView
-                android:id="@+id/sup"
+                android:id="@+id/tv_register"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
