@@ -1,8 +1,9 @@
 package com.tashi.patient_record_management;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity_register extends AppCompatActivity {
 

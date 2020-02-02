@@ -48,21 +48,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/background_01">
 
                 <ImageView
                     android:layout_width="65dp"
                     android:layout_height="65dp"
-                    android:src="@drawable/logo"/>
+                    android:src="@drawable/doctor"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Logo"
+                    android:text="Doctor"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textColor="#D81B60"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="1dp"/>
 
             </LinearLayout>
 
@@ -78,24 +79,27 @@
             app:cardCornerRadius="4dp">
 
             <LinearLayout
+                android:background="@drawable/background_01"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                >
 
                 <ImageView
                     android:layout_width="65dp"
                     android:layout_height="65dp"
-                    android:src="@drawable/logo"/>
+                    android:src="@drawable/patient"
+                    android:layout_marginTop="7dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Logo"
+                    android:text="Patient"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textColor="#D81B60"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="1dp"/>
 
             </LinearLayout>
 
@@ -113,21 +117,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/background_01">
 
                 <ImageView
                     android:layout_width="65dp"
                     android:layout_height="65dp"
-                    android:src="@drawable/logo"/>
+                    android:src="@drawable/appointment"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Logo"
+                    android:text="Appointment"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textColor="#D81B60"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="0dp"/>
 
             </LinearLayout>
 
@@ -142,6 +148,7 @@
             app:cardCornerRadius="4dp">
 
             <LinearLayout
+                android:background="@drawable/background_01"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
