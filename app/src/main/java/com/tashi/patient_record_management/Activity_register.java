@@ -28,7 +28,7 @@ public class Activity_register extends AppCompatActivity {
         email = findViewById(R.id.mail);
         password = findViewById(R.id.pswd);
         con_password = findViewById(R.id.mobphone);
-        btnsignup = findViewById(R.id.tv_login);
+        btnsignup = findViewById(R.id.tv_res);
         btnsignup.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
                 String emailID = email.getText().toString();
