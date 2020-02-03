@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "445820588125",
+    "firebase_url": "https://patient-record-management.firebaseio.com",
+    "project_id": "patient-record-management",
+    "storage_bucket": "patient-record-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445820588125:android:75f3638bd841ffa2627db4",
+        "android_client_info": {
+          "package_name": "com.tashi.patient_record_management"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445820588125-t6p3885h0n6kfsujgdrb2tfncskj8avs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tashi.patient_record_management",
+            "certificate_hash": "30096bee34fb819de0ddbcd8127373d781393595"
+          }
+        },
+        {
+          "client_id": "445820588125-alp1c352dsa7vdq7h35quk0p3718gfpi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBblqiSpAozGfC8z7dguTdB9rnPVmwOuPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445820588125-alp1c352dsa7vdq7h35quk0p3718gfpi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
