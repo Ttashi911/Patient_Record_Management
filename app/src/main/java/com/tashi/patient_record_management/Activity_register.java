@@ -69,5 +69,14 @@ public class Activity_register extends AppCompatActivity {
 
         });
 
+        txtsignin = findViewById(R.id.back);
+        txtsignin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Activity_register.this, Activity_login.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

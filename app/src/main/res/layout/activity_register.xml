@@ -11,11 +11,20 @@
         android:gravity="center"
         android:paddingLeft="60dp"
         android:paddingRight="60dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/logo"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -42,10 +51,6 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#4a5a71"></LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="16dp">
@@ -68,10 +73,6 @@
                     android:textColor="#fff"
                     />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#4a5a71"></LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,10 +99,6 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#4a5a71"></LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="16dp">
@@ -124,11 +121,31 @@
                     android:textColor="#fff"
                     />
             </LinearLayout>
-            <LinearLayout
+            <TextView
+                android:id="@+id/tv_res"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#4a5a71"></LinearLayout>
+                android:layout_height="wrap_content"
+                android:background="#CE4B43"
+                android:text="SignUp"
+                android:textColor="#d9e5f3"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                android:layout_marginBottom="50dp"
+                android:letterSpacing="0.2"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/back"
+                android:text="Already have an Account ?"
+                android:textColor="#d9e5f3"
+                android:letterSpacing="0.1"/>
         </LinearLayout>
+
+        </ScrollView>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -138,38 +155,8 @@
         android:orientation="vertical"
         android:gravity="bottom"
         android:layout_marginBottom="20dp">
-        <TextView
-            android:id="@+id/tv_res"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#CE4B43"
-            android:text="SignUp"
-            android:textColor="#d9e5f3"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_gravity="bottom"
-            android:padding="16dp"
-            android:layout_marginBottom="50dp"
-            android:letterSpacing="0.2"/>
-        <TextView
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Already have an Account ?"
-            android:textColor="#d9e5f3"
-            android:letterSpacing="0.1"/>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:layout_marginBottom="400dp">
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/logo"
-            />
-    </LinearLayout>
+
 </RelativeLayout>
 
