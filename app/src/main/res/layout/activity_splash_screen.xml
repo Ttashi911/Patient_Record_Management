@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    tools:context=".SplashScreen"
+    android:background="@drawable/grdnt">
+
+
 
     <ImageView
         android:id="@+id/SplashX"
-        android:layout_width="215dp"
+        android:layout_width="match_parent"
         android:layout_height="215dp"
-        android:layout_marginLeft="100dp"
         android:src="@drawable/logo"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="200dp"
 
         />
 
     <TextView
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/SplashX"
         android:text="Patient Record Management"
         android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/dashColor"
         android:textAlignment="center" />
+
 
 </RelativeLayout>
