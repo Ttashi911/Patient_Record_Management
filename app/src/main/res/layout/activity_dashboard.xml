@@ -58,6 +58,7 @@
                 android:background="@drawable/background_01">
 
                 <ImageView
+                    android:id="@+id/doc"
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:src="@drawable/doctor"/>

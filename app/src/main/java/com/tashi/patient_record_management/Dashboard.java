@@ -11,6 +11,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Dashboard extends AppCompatActivity {
     ImageView lout;
+
+
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
 
@@ -29,4 +31,6 @@ public class Dashboard extends AppCompatActivity {
             }
         });
     }
+
+
 }
