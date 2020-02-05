@@ -1,4 +1,14 @@
 package com.tashi.patient_record_management;
 
-public class Activity_location {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Activity_location extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_location);
+    }
 }

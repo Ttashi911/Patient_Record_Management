@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_02">
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@drawable/location"
-        android:layout_gravity="center"
-        android:layout_marginTop="55dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="Location"
-        android:textAlignment="center"
-        android:textColor="@color/dashColor"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginTop="25dp"/>
+    tools:context=".Activity_location">
 
 </LinearLayout>
