@@ -4,6 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_feedback">
+    tools:context=".Activity_feedback"
+    android:background="@drawable/background_02"
+    android:orientation="vertical"
+    android:src="@drawable/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/feedback"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:textAlignment="center"
+        android:textColor="@color/dashColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+    >
 
 </LinearLayout>

@@ -40,6 +40,15 @@ public class Dashboard extends AppCompatActivity {
         });
 
 
+        location= findViewById(R.id.location);
+        location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent I = new Intent(Dashboard.this, Activity_location.class);
+                startActivity(I);
+            }
+        });
 
 
         feedback = findViewById(R.id.feedback);
