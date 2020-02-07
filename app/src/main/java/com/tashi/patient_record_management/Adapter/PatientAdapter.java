@@ -22,7 +22,7 @@ public class PatientAdapter extends FirebaseRecyclerAdapter<Patient, PatientAdap
     @Override
     protected void onBindViewHolder(@NonNull PostViewHolder holder, int position, @NonNull Patient patient) {
 
-asdjahsgdjhasd
+
         holder.Name.setText(patient.getName());
         holder.Address.setText(patient.getAddress());
         holder.Treatment.setText(patient.getTreatment());
@@ -53,7 +53,7 @@ asdjahsgdjhasd
             Number = itemView.findViewById(R.id.Number);
             Blood_type = itemView.findViewById(R.id.Blood_type);
 
-asdgjasdj
+
         }
     }
 

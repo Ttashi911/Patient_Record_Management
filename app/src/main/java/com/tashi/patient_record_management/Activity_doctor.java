@@ -12,8 +12,8 @@ import com.tashi.patient_record_management.Adapter.DoctorAdapter;
 import com.tashi.patient_record_management.model.Doctor;
 
 public class Activity_doctor extends AppCompatActivity {
-private RecyclerView recyclerView;
-private DoctorAdapter adapter;
+    private RecyclerView recyclerView;
+    private DoctorAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +27,8 @@ private DoctorAdapter adapter;
                 new FirebaseRecyclerOptions.Builder<Doctor>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("DOCTOR"), Doctor.class)
                         .build();
-      adapter = new DoctorAdapter(options);
-      recyclerView.setAdapter(adapter);
+        adapter = new DoctorAdapter(options);
+        recyclerView.setAdapter(adapter);
 
 
     }
