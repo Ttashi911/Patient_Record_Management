@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity_location"></activity>
+        <activity android:name=".model.Patient" />
+        <activity android:name=".Activity_location" />
         <activity android:name=".Activity_feedback" />
         <activity android:name=".Activity_emergency" />
-        <activity android:name=".Activity_profile" />
+        <activity android:name=".Activity_patient" />
         <activity android:name=".Activity_doctor" />
         <activity android:name=".Dashboard" />
         <activity android:name=".Activity_register" />

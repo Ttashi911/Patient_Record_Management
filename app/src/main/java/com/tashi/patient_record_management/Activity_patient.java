@@ -8,27 +8,27 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
-import com.tashi.patient_record_management.Adapter.DoctorAdapter;
-import com.tashi.patient_record_management.model.Doctor;
+import com.tashi.patient_record_management.Adapter.PatientAdapter;
+import com.tashi.patient_record_management.model.Patient;
 
-public class Activity_doctor extends AppCompatActivity {
-private RecyclerView recyclerView;
-private DoctorAdapter adapter;
+public class Activity_patient extends AppCompatActivity {
+    private RecyclerView recyclerView;
+    private PatientAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_doctor);
 
+        setContentView(R.layout.activity_patient);
 
-        recyclerView = findViewById(R.id.recycler);
+        recyclerView = findViewById(R.id.precycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        FirebaseRecyclerOptions<Doctor> options =
-                new FirebaseRecyclerOptions.Builder<Doctor>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("DOCTOR"), Doctor.class)
+        FirebaseRecyclerOptions<Patient> options =
+                new FirebaseRecyclerOptions.Builder<Patient>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("PATIENT"), Patient.class)
                         .build();
-      adapter = new DoctorAdapter(options);
-      recyclerView.setAdapter(adapter);
+        adapter = new PatientAdapter(options);
+        recyclerView.setAdapter(adapter);
 
 
     }

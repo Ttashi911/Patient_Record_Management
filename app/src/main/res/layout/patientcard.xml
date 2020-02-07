@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:layout_marginBottom="10dp">
+
     <TextView
         android:layout_width="match_parent"
-        android:text="Doctor"
+        android:text="Patient"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:id="@+id/Doctor"
+        android:id="@+id/Patient"
         android:textColor="#ffffff"
         android:layout_marginTop="45dp"/>
     <TextView
@@ -27,26 +28,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:text="graduate"
-        android:id="@+id/Graduate"
-        android:textColor="#ffffff"
-        android:layout_marginTop="20dp">
-    </TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="specialist"
-        android:id="@+id/Specialist"
-        android:textColor="#ffffff"
-        android:layout_marginTop="20dp">
-    </TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="address"
-        android:textSize="25dp"
         android:id="@+id/Address"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="treatment"
+        android:id="@+id/Treatment"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="medication"
+        android:textSize="25dp"
+        android:id="@+id/Medication"
         android:textColor="#ffffff"
         android:layout_marginTop="20dp">
     </TextView>
@@ -56,6 +57,15 @@
         android:text="number"
         android:textSize="25dp"
         android:id="@+id/Number"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="blood_type"
+        android:textSize="25dp"
+        android:id="@+id/Blood_type"
         android:textColor="#ffffff"
         android:layout_marginTop="20dp">
     </TextView>
