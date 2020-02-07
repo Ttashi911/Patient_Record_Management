@@ -2,6 +2,7 @@ package com.tashi.patient_record_management.model;
 
 public class Doctor {
     String Name,Graduate,Specialist,Address,Number;
+    String Image;
 
 
     public Doctor() {
@@ -11,6 +12,7 @@ public class Doctor {
     public String toString() {
         return "Doctor{" +
                 "Name='" + Name + '\'' +
+                ", Image='" + Image + '\'' +
                 ", Graduate='" + Graduate + '\'' +
                 ", Specialist='" + Specialist + '\'' +
                 ", Address='" + Address + '\'' +
@@ -24,6 +26,14 @@ public class Doctor {
 
     public void setName(String name) {
         Name = name;
+    }
+
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
     }
 
     public String getGraduate() {
