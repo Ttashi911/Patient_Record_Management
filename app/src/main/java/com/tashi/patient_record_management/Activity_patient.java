@@ -29,7 +29,7 @@ public class Activity_patient extends AppCompatActivity {
                         .build();
         adapter = new PatientAdapter(options);
         recyclerView.setAdapter(adapter);
-
+tasdjasdjhkjasd
 
     }
 
