@@ -5,16 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp">
-    <TextView
-        android:layout_width="match_parent"
-        android:text="Doctor"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:id="@+id/Doctor"
-        android:textColor="#ffffff"
-        android:layout_marginTop="45dp"
-        android:layout_marginLeft="50dp">
-    </TextView>
 
     <TextView
         android:layout_width="match_parent"
@@ -29,19 +19,18 @@
 
     </TextView>
 <androidx.cardview.widget.CardView
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginLeft="85dp"
+    android:layout_gravity="center"
     android:layout_marginRight="85dp"
-    app:cardCornerRadius="5dp">
+    app:cardCornerRadius="10dp">
 
     <ImageView
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="15dp"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:id="@+id/image"
-        android:layout_gravity="center">
+        android:layout_marginLeft="25dp">
     </ImageView>
 </androidx.cardview.widget.CardView>
     <TextView
