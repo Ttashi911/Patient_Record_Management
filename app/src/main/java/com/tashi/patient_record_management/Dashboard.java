@@ -45,7 +45,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                Intent I = new Intent(Dashboard.this, Activity_location.class);
+                Intent I = new Intent(Dashboard.this, MapsActivity.class);
                 startActivity(I);
             }
         });
