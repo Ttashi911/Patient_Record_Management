@@ -2,7 +2,7 @@ package com.tashi.patient_record_management.model;
 
 public class Patient {
     String Name,Address,Treatment,Medication,Number,Blood_type;
-
+    String Image;
 
     public Patient() {
     }
@@ -11,6 +11,7 @@ public class Patient {
     public String toString() {
         return "Patient{" +
                 "Name='" + Name + '\'' +
+                ", Image='" + Image + '\'' +
                 ", Address='" + Address + '\'' +
                 ", Treatment='" + Treatment + '\'' +
                 ", Medication='" + Medication + '\'' +
