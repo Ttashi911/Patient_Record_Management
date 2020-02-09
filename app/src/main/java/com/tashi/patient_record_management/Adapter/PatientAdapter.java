@@ -3,6 +3,7 @@ package com.tashi.patient_record_management.Adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -10,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.squareup.picasso.Picasso;
 import com.tashi.patient_record_management.R;
 import com.tashi.patient_record_management.model.Patient;
 
@@ -29,6 +31,7 @@ public class PatientAdapter extends FirebaseRecyclerAdapter<Patient, PatientAdap
         holder.Medication.setText(patient.getMedication());
         holder.Number.setText(patient.getNumber());
         holder.Blood_type.setText(patient.getBlood_type());
+        Picasso.get().load(patient.getImage()).into(holder.image);
     }
 
     @NonNull
@@ -43,6 +46,7 @@ public class PatientAdapter extends FirebaseRecyclerAdapter<Patient, PatientAdap
     class PostViewHolder extends RecyclerView.ViewHolder{
 
         TextView Name,Address,Treatment,Medication,Number,Blood_type;
+        ImageView image;
 
         public PostViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -52,6 +56,7 @@ public class PatientAdapter extends FirebaseRecyclerAdapter<Patient, PatientAdap
             Medication = itemView.findViewById(R.id.Medication);
             Number = itemView.findViewById(R.id.Number);
             Blood_type = itemView.findViewById(R.id.Blood_type);
+            image = itemView.findViewById(R.id.image);
 
 
         }

@@ -28,6 +28,14 @@ public class Patient {
         Name = name;
     }
 
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
+        Image = image;
+    }
+
     public String getAddress() {
         return Address;
     }
