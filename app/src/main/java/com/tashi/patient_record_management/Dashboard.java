@@ -14,7 +14,7 @@ public class Dashboard extends AppCompatActivity {
     ImageView lout;
     LinearLayout doc;
     LinearLayout pro;
-    LinearLayout emg;
+    LinearLayout app;
     LinearLayout feedback;
     LinearLayout location;
 
@@ -62,7 +62,15 @@ public class Dashboard extends AppCompatActivity {
         });
 
 
-
+        app = findViewById(R.id.app);
+        app.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                Intent I = new Intent(Dashboard.this, Activity_appointment.class);
+                startActivity(I);
+            }
+        });
 
         pro = findViewById(R.id.pro);
         pro.setOnClickListener(new View.OnClickListener() {
@@ -87,8 +95,6 @@ public class Dashboard extends AppCompatActivity {
             }
         });
     }
-
-
 
 
 }
