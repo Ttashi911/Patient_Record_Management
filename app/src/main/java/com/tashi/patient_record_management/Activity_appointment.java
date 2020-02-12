@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.EditText;
 
 import androidx.annotation.NonNull;
@@ -19,8 +20,9 @@ import java.util.HashMap;
 
 public class Activity_appointment extends AppCompatActivity {
 
-    private EditText Name, Address, Treatment, Blood_type, Number, Date;
+    private EditText Name, Address, Treatment, Blood_type, Number;
     private Button appoint;
+    private CalendarView Date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +46,7 @@ public class Activity_appointment extends AppCompatActivity {
                 map.put("Treatment", Treatment.getText().toString());
                 map.put("Blood_type", Blood_type.getText().toString());
                 map.put("Number", Number.getText().toString());
-                map.put("Date", Date.getText().toString());
+                map.put("Date", Date.getDateTextAppearance());
                 FirebaseDatabase.getInstance().getReference().child("Appointment").push()
                         .setValue(map)
                         .addOnCompleteListener(new OnCompleteListener<Void>() {

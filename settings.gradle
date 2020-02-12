@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':wearables'
 rootProject.name='Patient_Record_Management'

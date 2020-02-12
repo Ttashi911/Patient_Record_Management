@@ -6,17 +6,17 @@
     android:layout_height="match_parent"
     tools:context="Activity_appointment"
     android:background="@drawable/background_02"
-    android:orientation="vertical"
-    android:src="@drawable/black">
+    android:orientation="vertical">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
 
     <ImageView
         android:layout_width="match_parent"
@@ -33,11 +33,12 @@
         android:textColor="@color/dashColor"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="10dp"/>
+
 
 
     <EditText
-        android:layout_width="180dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:hint="Name"
         android:id="@+id/Name"
@@ -48,11 +49,11 @@
     </EditText>
 
     <EditText
-        android:layout_width="270dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:hint="Address"
         android:id="@+id/Address"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:textColorHint="#ffffff"
         android:layout_marginLeft="40dp">
     </EditText>
@@ -88,16 +89,17 @@
         android:layout_marginLeft="40dp">
     </EditText>
 
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:hint="Datetime"
-        android:inputType="datetime"
-        android:textColorHint="#ffffff"
-        android:id="@+id/Date"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="40dp">
-    </EditText>
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="29dp"
+            android:layout_height="150dp"
+            android:id="@+id/Date"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
+        </CalendarView>
 
     <Button
         android:layout_width="175dp"
@@ -105,9 +107,11 @@
         android:background="@color/colorPrimary"
         android:id="@+id/appoint"
         android:text="MAKE APPOINTMENT"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:layout_gravity="center"
         android:layout_marginBottom="30dp"/>
     </LinearLayout>
+
     </ScrollView>
+    
 </LinearLayout>
