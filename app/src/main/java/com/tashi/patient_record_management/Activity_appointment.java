@@ -16,6 +16,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 public class Activity_appointment extends AppCompatActivity {
@@ -46,7 +48,10 @@ public class Activity_appointment extends AppCompatActivity {
                 map.put("Treatment", Treatment.getText().toString());
                 map.put("Blood_type", Blood_type.getText().toString());
                 map.put("Number", Number.getText().toString());
-                map.put("Date", Date.getDateTextAppearance());
+//                Log.d(Date.get)
+                SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+                String strDate= formatter.format(new Date(Date.getDate()));
+                map.put("Date", strDate);
                 FirebaseDatabase.getInstance().getReference().child("Appointment").push()
                         .setValue(map)
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
